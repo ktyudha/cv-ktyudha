@@ -1,0 +1,80 @@
+/* Accordion */
+details {
+  user-select: none;
+}
+
+details summary .svg_close {
+  display: none;
+}
+
+details[open] summary .svg_close {
+  display: block;
+}
+
+details[open] summary .svg_open {
+  display: none;
+}
+
+details[open] summary ~ * {
+  animation: ease-opacity-t-b 0.5s ease;
+}
+
+summary {
+  cursor: pointer;
+}
+
+svg {
+  transition: all 0.3s;
+}
+
+/* TO JE TO - TO JE TAJ */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+:focus {
+  outline: none;
+}
+/* Accordion End */
+
+/* .details {
+  @apply border;
+  @apply p-4;
+  @apply w-full;
+  @apply border;
+  @apply border-primary-400;
+  @apply mb-4;
+  @apply text-xl;
+  @apply font-light;
+  @apply text-gray-600;
+}
+
+.details > summary {
+  list-style-type: none;
+  @apply cursor-pointer;
+  @apply text-primary-500;
+}
+
+.details > summary > .btnWrapper > div {
+  @apply w-10;
+  @apply h-10;
+  @apply rounded-full;
+  @apply text-white;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  @apply font-semibold;
+  @apply text-xl;
+}
+
+.details > summary > .btnWrapper > .minus {
+  @apply hidden;
+}
+
+.details[open] > summary > .btnWrapper > .minus {
+  @apply flex;
+}
+
+.details[open] > summary > .btnWrapper > .plus {
+  @apply hidden;
+} */
