@@ -1,52 +1,52 @@
 const navbarMenus = [
   {
-    name: 'Beranda',
+    name: "Beranda",
     isDropdown: false,
-    url: '/',
+    url: "/",
   },
   {
-    name: 'FAQ',
+    name: "FAQ",
     isDropdown: false,
-    url: '/faq',
+    url: "/faq",
   },
   {
-    name: 'Panduan',
+    name: "Panduan",
     isDropdown: true,
-    url: '/panduan',
+    url: "/panduan",
     hasSubmenu: true,
     submenuLinks: [
       {
-        subUrl: '/panduan/alumni/panduan-alumni-smk',
-        label: 'Panduan Alumni SMK',
+        subUrl: "/panduan/alumni/panduan-alumni-smk",
+        label: "Panduan Alumni SMK",
         forceShow: true,
       },
       {
-        subUrl: '/panduan/alumni/video-panduan-alumni-smk',
-        label: 'Video Panduan Alumni SMK',
+        subUrl: "/panduan/alumni/video-panduan-alumni-smk",
+        label: "Video Panduan Alumni SMK",
         forceShow: true,
       },
       {
-        subUrl: '/panduan/alumni/panduan-alumni-sma',
-        label: 'Panduan Alumni SMA',
+        subUrl: "/panduan/alumni/panduan-alumni-sma",
+        label: "Panduan Alumni SMA",
         forceShow: true,
       },
       {
-        subUrl: '/panduan/alumni/video-panduan-alumni-sma',
-        label: 'Video Panduan Alumni SMA',
+        subUrl: "/panduan/alumni/video-panduan-alumni-sma",
+        label: "Video Panduan Alumni SMA",
         forceShow: true,
       },
     ],
   },
   {
-    name: 'Regulasi',
+    name: "Regulasi",
     isDropdown: false,
-    url: '/regulasi',
+    url: "/regulasi",
   },
   {
-    name: 'Kontak Bantuan',
+    name: "Kontak Bantuan",
     isDropdown: false,
-    url: '/kontak-bantuan',
+    url: "/kontak-bantuan",
   },
-]
+];
 
-export default navbarMenus
+export default navbarMenus;

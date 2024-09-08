@@ -1,58 +1,58 @@
 .main-layout .main-menu a {
-    @apply flex;
-    @apply items-center;
-    @apply gap-2;
-    @apply relative;
+  @apply flex;
+  @apply items-center;
+  @apply gap-2;
+  @apply relative;
 }
 
 .main-layout .main-menu a .icon {
-    @apply w-[3.5rem];
-    @apply h-12;
-    @apply flex;
-    @apply justify-center;
-    @apply items-center;
-    /* @apply rounded-full; */
-    /* @apply bg-[#172554]; */
+  @apply w-[3.5rem];
+  @apply h-12;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  /* @apply rounded-full; */
+  /* @apply bg-[#172554]; */
 }
 
 .hexagon {
-    clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
 }
 
 .main-layout .main-menu a .name {
-    @apply hidden;
+  @apply hidden;
 }
 
 .hidden-icon-select {
-    appearance: none;
+  appearance: none;
 }
 
 .hidden-view {
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: default;
 }
 
 .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .grid-item {
-    flex: 0 0 calc(25% - 20px);
-    padding: 20px;
-    margin: 10px;
+  flex: 0 0 calc(25% - 20px);
+  padding: 20px;
+  margin: 10px;
 }
 
 @media (max-width: 768px) {
-    .grid-item {
-        flex: 0 0 calc(100% - 20px);
-    }
+  .grid-item {
+    flex: 0 0 calc(100% - 20px);
+  }
 }
 
 .main-layout.mainMenuExpanded .main-menu a .name {
-    @apply block;
+  @apply block;
 }
