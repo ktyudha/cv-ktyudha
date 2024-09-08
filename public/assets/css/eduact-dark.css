@@ -1,5 +1,5 @@
 :root {
-  --eduact-text: #F1F2FD;
+  --eduact-text: #f1f2fd;
   --eduact-text-rgb: 241, 242, 253;
   --eduact-black: #fff;
   --eduact-black-rgb: 255, 255, 255;
@@ -7,15 +7,15 @@
   --eduact-white-rgb: 18, 21, 52;
   --eduact-black3: #000324;
   --eduact-black3-rgb: 0, 3, 36;
-  --eduact-grey: #F6F6F6;
+  --eduact-grey: #f6f6f6;
   --eduact-grey-rgb: 246, 246, 246;
-  --eduact-black4: #2A254D;
+  --eduact-black4: #2a254d;
   --eduact-black4-rgb: 42, 37, 77;
   --eduact-black5: #121745;
   --eduact-black5-rgb: 18, 23, 69;
   --eduact-black6: #282445;
   --eduact-black6-rgb: 40, 36, 69;
-  --eduact-soft3: #13194F;
+  --eduact-soft3: #13194f;
   --eduact-soft3-rgb: 19, 25, 79;
 }
 
@@ -59,7 +59,11 @@
 
 .hero-banner__bg-shape1,
 .hero-banner__bg-shape1::after {
-  background: linear-gradient(180deg, rgba(var(--eduact-black-rgb), 0.09) 0%, rgba(var(--eduact-black-rgb), 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(var(--eduact-black-rgb), 0.09) 0%,
+    rgba(var(--eduact-black-rgb), 0) 100%
+  );
 }
 
 .hero-banner__btn .eduact-btn + .eduact-btn {
@@ -114,7 +118,11 @@
 
 .category-one__hover__icon::after,
 .category-one__icon::after {
-  background: linear-gradient(177deg, rgba(var(--eduact-black-rgb), 0.53) 0%, rgba(var(--eduact-black-rgb), 0) 100%);
+  background: linear-gradient(
+    177deg,
+    rgba(var(--eduact-black-rgb), 0.53) 0%,
+    rgba(var(--eduact-black-rgb), 0) 100%
+  );
 }
 
 .category-one__slider.owl-carousel .owl-dots .owl-dot {
@@ -173,7 +181,11 @@
 }
 
 .course-one__thumb {
-  background: linear-gradient(147deg, var(--eduact-black) 0%, rgba(231, 231, 231, 0) 100%);
+  background: linear-gradient(
+    147deg,
+    var(--eduact-black) 0%,
+    rgba(231, 231, 231, 0) 100%
+  );
 }
 
 /*# sourceMappingURL=eduact-dark.css.map */

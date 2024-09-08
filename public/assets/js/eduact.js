@@ -29,7 +29,7 @@
             $(form).find('input[type="text"]').val("");
             $(form).find('input[type="email"]').val("");
             $(form).find("textarea").val("");
-          }
+          },
         );
         return false;
       },
@@ -145,7 +145,7 @@
 
   if ($(".mobile-nav__container .main-menu__list").length) {
     let dropdownAnchor = $(
-      ".mobile-nav__container .main-menu__list .dropdown > a"
+      ".mobile-nav__container .main-menu__list .dropdown > a",
     );
     dropdownAnchor.each(function () {
       let self = $(this);
@@ -307,8 +307,8 @@
     if ($(this).next().val() > 1) {
       if ($(this).next().val() > 1)
         $(this)
-        .next()
-        .val(+$(this).next().val() - 1);
+          .next()
+          .val(+$(this).next().val() - 1);
     }
   });
 
@@ -323,20 +323,22 @@
         slide: function (event, ui) {
           $(".price-ranger .ranger-min-max-block .min").val("$" + ui.values[0]);
           $(".price-ranger .ranger-min-max-block .max").val("$" + ui.values[1]);
-        }
+        },
       });
       $(".price-ranger .ranger-min-max-block .min").val(
-        "$" + $(".price-ranger #slider-range").slider("values", 0)
+        "$" + $(".price-ranger #slider-range").slider("values", 0),
       );
       $(".price-ranger .ranger-min-max-block .max").val(
-        "$" + $(".price-ranger #slider-range").slider("values", 1)
+        "$" + $(".price-ranger #slider-range").slider("values", 1),
       );
     }
   }
 
   /*-- Checkout Accoradin --*/
   if ($(".checkout-page__payment__title").length) {
-    $(".checkout-page__payment__item").find(".checkout-page__payment__content").hide();
+    $(".checkout-page__payment__item")
+      .find(".checkout-page__payment__content")
+      .hide();
     $(".checkout-page__payment__item--active")
       .find(".checkout-page__payment__content")
       .show();
@@ -356,30 +358,30 @@
   }
 
   /*-- Dynamic year --*/
-  let dynamicyearElm = $('.dynamic-year');
+  let dynamicyearElm = $(".dynamic-year");
   if (dynamicyearElm.length) {
     let currentYear = new Date().getFullYear();
     dynamicyearElm.html(currentYear);
   }
 
   /*-- Hover Tilt --*/
-  let eduactTiltElm = $('.eduact-tilt');
+  let eduactTiltElm = $(".eduact-tilt");
   if (eduactTiltElm.length) {
     eduactTiltElm.each(function () {
       let self = $(this);
-      let options = self.data('tilt-options');
+      let options = self.data("tilt-options");
       let eduactTilt = self.tilt(
-        "object" === typeof options ? options : JSON.parse(options)
+        "object" === typeof options ? options : JSON.parse(options),
       );
     });
   }
 
   // === Filter Masnry===
   function filterMasonaryLayout() {
-    let eduactMasonary = $('.eduact-masonary');
+    let eduactMasonary = $(".eduact-masonary");
     if (eduactMasonary.length) {
       eduactMasonary.isotope({
-        layoutMode: "masonry"
+        layoutMode: "masonry",
       });
     }
     if ($(".post-filter").length) {
@@ -395,8 +397,8 @@
             animationOptions: {
               duration: 500,
               easing: "linear",
-              queue: false
-            }
+              queue: false,
+            },
           });
           return false;
         });
@@ -405,7 +407,7 @@
     if ($(".post-filter.has-dynamic-filters-counter").length) {
       // var allItem = $('.single-filter-item').length;
       var activeFilterItem = $(".post-filter.has-dynamic-filters-counter").find(
-        "li"
+        "li",
       );
       activeFilterItem.each(function () {
         var filterElement = $(this).data("filter");
@@ -476,7 +478,7 @@
         f = i - s.right,
         styles = {
           "margin-left": 0,
-          "margin-right": 0
+          "margin-right": 0,
         };
       if (Math.round(c) === Math.round(p)) {
         var h = parseFloat($this.css("margin-left") || 0);
@@ -492,31 +494,31 @@
 
   function thmOwlInit() {
     // owl slider
-    let eduactowlCarousel = $('.eduact-owl__carousel');
+    let eduactowlCarousel = $(".eduact-owl__carousel");
     if (eduactowlCarousel.length) {
       eduactowlCarousel.each(function () {
         let elm = $(this);
-        let options = elm.data('owl-options');
+        let options = elm.data("owl-options");
         let thmOwlCarousel = elm.owlCarousel(
-          "object" === typeof options ? options : JSON.parse(options)
+          "object" === typeof options ? options : JSON.parse(options),
         );
       });
     }
-    let eduactowlCarouselNav = $('.eduact-owl__carousel--custom-nav');
+    let eduactowlCarouselNav = $(".eduact-owl__carousel--custom-nav");
     if (eduactowlCarouselNav.length) {
       eduactowlCarouselNav.each(function () {
         let elm = $(this);
-        let owlNavPrev = elm.data('owl-nav-prev');
-        let owlNavNext = elm.data('owl-nav-next');
+        let owlNavPrev = elm.data("owl-nav-prev");
+        let owlNavNext = elm.data("owl-nav-next");
         $(owlNavPrev).on("click", function (e) {
-          elm.trigger('prev.owl.carousel');
+          elm.trigger("prev.owl.carousel");
           e.preventDefault();
-        })
+        });
 
         $(owlNavNext).on("click", function (e) {
-          elm.trigger('next.owl.carousel');
+          elm.trigger("next.owl.carousel");
           e.preventDefault();
-        })
+        });
       });
     }
   }
@@ -531,21 +533,22 @@
   }
 
   // Popular Causes Progress Bar
-  let countbarElm = $('.count-bar');
+  let countbarElm = $(".count-bar");
   if (countbarElm.length) {
     countbarElm.appear(
       function () {
         var el = $(this);
         var percent = el.data("percent");
         $(el).css("width", percent).addClass("counted");
-      }, {
-        accY: -50
-      }
+      },
+      {
+        accY: -50,
+      },
     );
   }
 
   //Fact Counter + Text Count
-  let countboxElm = $('.count-box');
+  let countboxElm = $(".count-box");
   if (countboxElm.length) {
     countboxElm.appear(
       function () {
@@ -556,64 +559,68 @@
         if (!$t.hasClass("counted")) {
           $t.addClass("counted");
           $({
-            countNum: $t.find(".count-text").text()
-          }).animate({
-            countNum: n
-          }, {
-            duration: r,
-            easing: "linear",
-            step: function () {
-              $t.find(".count-text").text(Math.floor(this.countNum));
+            countNum: $t.find(".count-text").text(),
+          }).animate(
+            {
+              countNum: n,
             },
-            complete: function () {
-              $t.find(".count-text").text(this.countNum);
-            }
-          });
+            {
+              duration: r,
+              easing: "linear",
+              step: function () {
+                $t.find(".count-text").text(Math.floor(this.countNum));
+              },
+              complete: function () {
+                $t.find(".count-text").text(this.countNum);
+              },
+            },
+          );
         }
-      }, {
-        accY: 0
-      }
+      },
+      {
+        accY: 0,
+      },
     );
   }
   /*-- Countdown --*/
   if ($(".counter-one__list").length) {
     let mainDate = $(".counter-one__list").data("deadline-date");
     let yearsCondition =
-      undefined == $(".counter-one__list").data("enable-years") ?
-      false :
-      $(".counter-one__list").data("enable-years");
+      undefined == $(".counter-one__list").data("enable-years")
+        ? false
+        : $(".counter-one__list").data("enable-years");
     let daysCondition =
-      undefined == $(".counter-one__list").data("enable-days") ?
-      true :
-      $(".counter-one__list").data("enable-days");
+      undefined == $(".counter-one__list").data("enable-days")
+        ? true
+        : $(".counter-one__list").data("enable-days");
     let leadingZeros = $(".counter-one__list").data("leading-zeros");
     console.log(daysCondition);
     let deadLine =
-      "dynamicDate" == mainDate ?
-      new Date(Date.parse(new Date()) + 31 * 24 * 60 * 60 * 1000) :
-      "dynamicHour" == mainDate ?
-      new Date(Date.parse(new Date()) + 24 * 60 * 60 * 1000) :
-      mainDate;
+      "dynamicDate" == mainDate
+        ? new Date(Date.parse(new Date()) + 31 * 24 * 60 * 60 * 1000)
+        : "dynamicHour" == mainDate
+          ? new Date(Date.parse(new Date()) + 24 * 60 * 60 * 1000)
+          : mainDate;
 
     $(".counter-one__list").countdown({
       date: deadLine,
       leadingZeros: true,
       render: function (date) {
         this.el.innerHTML =
-          (true == yearsCondition ?
-            "<li> <span class='years'> " +
-            (true == leadingZeros ?
-              this.leadingZeros(date.years) :
-              date.years) +
-            " <i> Years </i> </span> </li>" :
-            " ") +
-          (true == daysCondition ?
-            "<li> <span class='days'> " +
-            (true == leadingZeros ?
-              this.leadingZeros(date.days) :
-              date.days) +
-            " <i> Days </i> </span> </li>" :
-            " ") +
+          (true == yearsCondition
+            ? "<li> <span class='years'> " +
+              (true == leadingZeros
+                ? this.leadingZeros(date.years)
+                : date.years) +
+              " <i> Years </i> </span> </li>"
+            : " ") +
+          (true == daysCondition
+            ? "<li> <span class='days'> " +
+              (true == leadingZeros
+                ? this.leadingZeros(date.days)
+                : date.days) +
+              " <i> Days </i> </span> </li>"
+            : " ") +
           "<li> <span class='hours'>" +
           (true == leadingZeros ? this.leadingZeros(date.hours) : date.hours) +
           " <i> Hours </i> </span> </li>" +
@@ -623,7 +630,7 @@
           "<li> <span class='seconds'>" +
           (true == leadingZeros ? this.leadingZeros(date.sec) : date.sec) +
           " <i> Secs </i> </span> </li>";
-      }
+      },
     });
   }
 
@@ -640,11 +647,12 @@
         var target = $(this);
         $("html, body")
           .stop()
-          .animate({
-              scrollTop: $(target.attr("href")).offset().top - headerH + "px"
+          .animate(
+            {
+              scrollTop: $(target.attr("href")).offset().top - headerH + "px",
             },
             900,
-            "easeInOutExpo"
+            "easeInOutExpo",
           );
         anchor.removeClass("current");
         anchor.removeClass("current-menu-ancestor");
@@ -690,14 +698,14 @@
   }
 
   /*-- Back-to-top --*/
-  let scrollTop = $('.scroll-top path');
+  let scrollTop = $(".scroll-top path");
   if (scrollTop.length) {
     var e = document.querySelector(".scroll-top path"),
       t = e.getTotalLength();
     (e.style.transition = e.style.WebkitTransition = "none"),
-    (e.style.strokeDasharray = t + " " + t),
-    (e.style.strokeDashoffset = t),
-    e.getBoundingClientRect(),
+      (e.style.strokeDasharray = t + " " + t),
+      (e.style.strokeDashoffset = t),
+      e.getBoundingClientRect(),
       (e.style.transition = e.style.WebkitTransition =
         "stroke-dashoffset 10ms linear");
     var o = function () {
@@ -720,7 +728,7 @@
 
   // window load event
   $(window).on("load", function () {
-    let preloader = $('.preloader');
+    let preloader = $(".preloader");
     if (preloader.length) {
       preloader.fadeOut();
     }
@@ -729,7 +737,7 @@
     filterMasonaryLayout();
     priceFilter();
 
-    let circleProgress = $('.circle-progress');
+    let circleProgress = $(".circle-progress");
     if (circleProgress.length) {
       circleProgress.appear(function () {
         let circleProgress = $(".circle-progress");
@@ -740,7 +748,6 @@
         });
       });
     }
-
   });
 
   // window scroll event
@@ -756,5 +763,4 @@
     }
     OnePageMenuScroll();
   });
-
 })(jQuery);

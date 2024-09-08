@@ -209,29 +209,29 @@
 # Common
 --------------------------------------------------------------*/
 :root {
-  --eduact-font: 'Urbanist', sans-serif;
-  --heading-font: 'Urbanist', sans-serif;
+  --eduact-font: "Urbanist", sans-serif;
+  --heading-font: "Urbanist", sans-serif;
   --eduact-text: #697585;
   --eduact-text-rgb: 105, 117, 133;
-  --eduact-text2: #B3ADE1;
+  --eduact-text2: #b3ade1;
   --eduact-text2-rgb: 179, 173, 225;
-  --eduact-grey: #B7B0B4;
+  --eduact-grey: #b7b0b4;
   --eduact-grey-rgb: 183, 176, 180;
-  --eduact-soft: #F1F2FD;
+  --eduact-soft: #f1f2fd;
   --eduact-soft-rgb: 241, 242, 253;
-  --eduact-soft2: #F6F5F5;
+  --eduact-soft2: #f6f5f5;
   --eduact-soft2-rgb: 246, 245, 245;
-  --eduact-soft3: #E0E3FD;
+  --eduact-soft3: #e0e3fd;
   --eduact-soft3-rgb: 224, 227, 253;
-  --eduact-soft4: #E4E4E4;
+  --eduact-soft4: #e4e4e4;
   --eduact-soft4-rgb: 228, 228, 228;
-  --eduact-soft5: #F6F6F6;
+  --eduact-soft5: #f6f6f6;
   --eduact-soft5-rgb: 246, 246, 246;
-  --eduact-base: #4F5DE4;
+  --eduact-base: #4f5de4;
   --eduact-base-rgb: 79, 93, 228;
-  --eduact-secondary: #F57005;
+  --eduact-secondary: #f57005;
   --eduact-secondary-rgb: 245, 112, 5;
-  --eduact-black: #2A254D;
+  --eduact-black: #2a254d;
   --eduact-black-rgb: 42, 37, 77;
   --eduact-black2: #000000;
   --eduact-black2-rgb: 0, 0, 0;
@@ -503,7 +503,7 @@ h6 {
 .scroll-top::after {
   position: absolute;
   content: "\e904";
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   text-align: center;
   line-height: 50px;
   font-size: 17px;
@@ -589,10 +589,23 @@ h6 {
 .owl-with-shadow .owl-stage-outer .owl-item {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 500ms ease, visibility 500ms ease, -webkit-transform 500ms ease;
-  transition: opacity 500ms ease, visibility 500ms ease, -webkit-transform 500ms ease;
-  transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease;
-  transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease, -webkit-transform 500ms ease;
+  -webkit-transition:
+    opacity 500ms ease,
+    visibility 500ms ease,
+    -webkit-transform 500ms ease;
+  transition:
+    opacity 500ms ease,
+    visibility 500ms ease,
+    -webkit-transform 500ms ease;
+  transition:
+    opacity 500ms ease,
+    visibility 500ms ease,
+    transform 500ms ease;
+  transition:
+    opacity 500ms ease,
+    visibility 500ms ease,
+    transform 500ms ease,
+    -webkit-transform 500ms ease;
 }
 
 .owl-with-shadow .owl-stage-outer .owl-item.active {
@@ -635,7 +648,7 @@ h6 {
   margin: auto;
   width: calc(100% + 10px);
   height: calc(100% + 10px);
-  content: '';
+  content: "";
   border-radius: 50%;
   border: 1px solid var(--eduact-base);
   visibility: hidden;
@@ -647,13 +660,15 @@ h6 {
   -o-transition: all 0.5s ease;
 }
 
-.eduact-owl__dots.owl-carousel.owl-theme .owl-dots .owl-dot:hover, .eduact-owl__dots.owl-carousel.owl-theme .owl-dots .owl-dot.active,
+.eduact-owl__dots.owl-carousel.owl-theme .owl-dots .owl-dot:hover,
+.eduact-owl__dots.owl-carousel.owl-theme .owl-dots .owl-dot.active,
 .eduact-owl__dots.owl-carousel .owl-dots .owl-dot:hover,
 .eduact-owl__dots.owl-carousel .owl-dots .owl-dot.active {
   background-color: var(--eduact-secondary);
 }
 
-.eduact-owl__dots.owl-carousel.owl-theme .owl-dots .owl-dot:hover::after, .eduact-owl__dots.owl-carousel.owl-theme .owl-dots .owl-dot.active::after,
+.eduact-owl__dots.owl-carousel.owl-theme .owl-dots .owl-dot:hover::after,
+.eduact-owl__dots.owl-carousel.owl-theme .owl-dots .owl-dot.active::after,
 .eduact-owl__dots.owl-carousel .owl-dots .owl-dot:hover::after,
 .eduact-owl__dots.owl-carousel .owl-dots .owl-dot.active::after {
   visibility: visible;
@@ -749,7 +764,7 @@ h6 {
 }
 
 .eduact-btn--light:hover .eduact-btn__curve {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 @media (min-width: 1400px) {
@@ -797,7 +812,7 @@ h6 {
   background-position: center center;
   width: 100%;
   height: 100%;
-  opacity: .02;
+  opacity: 0.02;
 }
 
 .hero-section .container {
@@ -1121,7 +1136,7 @@ h6 {
 }
 
 .demos-one__single:hover .demos-one__image img {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .demos-one__image {
@@ -1153,10 +1168,19 @@ h6 {
   opacity: 0;
   -webkit-transform: translateY(10%);
   transform: translateY(10%);
-  -webkit-transition: opacity 500ms ease, -webkit-transform 500ms ease;
-  transition: opacity 500ms ease, -webkit-transform 500ms ease;
-  transition: opacity 500ms ease, transform 500ms ease;
-  transition: opacity 500ms ease, transform 500ms ease, -webkit-transform 500ms ease;
+  -webkit-transition:
+    opacity 500ms ease,
+    -webkit-transform 500ms ease;
+  transition:
+    opacity 500ms ease,
+    -webkit-transform 500ms ease;
+  transition:
+    opacity 500ms ease,
+    transform 500ms ease;
+  transition:
+    opacity 500ms ease,
+    transform 500ms ease,
+    -webkit-transform 500ms ease;
 }
 
 .demos-one__buttons .eduact-btn {
@@ -1354,7 +1378,7 @@ h6 {
 
 .main-footer__copyright {
   position: relative;
-  border-top: 1px solid #36305D;
+  border-top: 1px solid #36305d;
   margin: 99px 0 0;
   color: var(--eduact-white);
   font-weight: 500;
