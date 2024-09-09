@@ -10,7 +10,7 @@ const HeroSection: FunctionComponent = () => {
             Hello,
             <br /> I'm Yudha
           </h1>
-          <p className="py-6 text-xl md:text-base">
+          <p className="py-6 text-xs md:text-base">
             Full Stack Developer | Network Engineer | Visual Storyteller
           </p>
           {/* <button className="btn btn-primary">Get Started</button> */}
