@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import { Outlet } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import LandingNavbar from "./LandingNavbar";
-import LandingNavbarMobile from "./LandingNavbar/LandingNavbarMobile";
+// import LandingNavbarMobile from "./LandingNavbar/LandingNavbarMobile";
 import LandingHelmet from "./LandingHelmet";
 import jquery from "jquery";
 
@@ -17,32 +17,32 @@ const LandingLayout: FunctionComponent = () => {
     <HelmetProvider>
       {/* assets */}
       <LandingHelmet />
-      <div className="custom-cursor">
-        <div className="custom-cursor__cursor"></div>
-        <div className="custom-cursor__cursor-two"></div>
+      {/* <div className="custom-cursor"> */}
+      {/* <div className="custom-cursor__cursor"></div>
+        <div className="custom-cursor__cursor-two"></div> */}
 
-        <div className="preloader">
+      {/* <div className="preloader">
           <div
             className="preloader__image"
             style={{ backgroundImage: "url(/assets/images/loader.png)" }}
           ></div>
-        </div>
+        </div> */}
 
-        <div className="page-wrapper">
-          <LandingNavbar />
-          <div className="stricky-header stricked-menu main-menu">
+      <div className="page-wrapper">
+        <LandingNavbar />
+        {/* <div className="stricky-header stricked-menu main-menu">
             <div className="sticky-header__content"></div>
-          </div>
-          {/* <div className="stricky-header stricked-menu main-menu main-header-two">
+          </div> */}
+        {/* <div className="stricky-header stricked-menu main-menu main-header-two">
             <div className="sticky-header__content"></div>
           </div> */}
 
-          <Outlet />
-        </div>
+        <Outlet />
+      </div>
 
-        <LandingNavbarMobile />
+      {/* <LandingNavbarMobile /> */}
 
-        <div className="search-popup">
+      {/* <div className="search-popup">
           <div className="search-popup__overlay search-toggler"></div>
           <div className="search-popup__content">
             <form
@@ -58,9 +58,9 @@ const LandingLayout: FunctionComponent = () => {
               </button>
             </form>
           </div>
-        </div>
+        </div> */}
 
-        <div className="scroll-top">
+      {/* <div className="scroll-top">
           <svg
             className="scroll-top__circle"
             width="100%"
@@ -69,8 +69,8 @@ const LandingLayout: FunctionComponent = () => {
           >
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
           </svg>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </HelmetProvider>
   );
 };
