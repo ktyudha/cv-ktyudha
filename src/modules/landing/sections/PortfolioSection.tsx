@@ -9,18 +9,22 @@ const PortfolioSection: FunctionComponent = () => (
           <span className="text-2xl font-normal">My</span> Portfolio
         </h1>
       </div>
-      <div className="grid md:grid-cols-3 mx-auto justify-center grid-cols-1 gap-10">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:mx-auto justify-center grid-cols-1 lg:gap-10 md:gap-5 gap-5 px-4">
         {PORTOFOLIOS.map((portfolio, index) => (
           <div
             key={index}
-            className="card card-compact mx-auto bg-base-100 w-96 shadow-xl"
+            className="card card-compact mx-auto bg-base-100 shadow-xl"
           >
             <figure>
-              <img src={portfolio.image} alt={portfolio.title} />
+              <img
+                src={portfolio.image}
+                className="w-96"
+                alt={portfolio.title}
+              />
             </figure>
             <div className="card-body">
               <h2 className="card-title">{portfolio.title}</h2>
-              <p>{portfolio.description}</p>
+              <p className="lg:text-sm text-xs">{portfolio.description}</p>
               <div className="card-actions justify-start mt-3">
                 {/* File */}
                 <div className="flex">
