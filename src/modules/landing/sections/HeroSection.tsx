@@ -4,8 +4,13 @@ import { FunctionComponent } from "react";
 const HeroSection: FunctionComponent = () => {
   return (
     <section className="hero min-h-screen" id="home">
-      <div className="hero-content mx-auto md:text-left text-center">
+      <div className="hero-content mx-auto text-left">
         <div className="max-w-md">
+          <img
+            src="/assets/images/profile/icon_yudha.png"
+            className="w-20 mb-5 "
+            alt=""
+          />
           <h1 className="text-5xl font-bold">
             Hello,
             <br /> I'm Yudha
