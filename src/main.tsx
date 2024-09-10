@@ -1,4 +1,4 @@
-import { StrictMode, Suspense, useEffect } from "react";
+import { StrictMode, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
@@ -13,7 +13,7 @@ import GetBrowserRoutes from "./components/utils/Router.tsx";
 import { ToastContainer } from "react-toastify";
 import * as Sentry from "@sentry/react";
 
-import Loader from "@/components/reusable/Loader.tsx";
+// import Loader from "@/components/reusable/Loader.tsx";
 import "./styles/main.css";
 
 Sentry.init({
@@ -48,8 +48,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <StrictMode>
     <ToastContainer />
-    <Suspense fallback={<Loader />}>
-      <RouterProvider router={router} />
-    </Suspense>
+    {/* <Suspense fallback={<Loader />}> */}
+    <RouterProvider router={router} />
+    {/* </Suspense> */}
   </StrictMode>
 );
