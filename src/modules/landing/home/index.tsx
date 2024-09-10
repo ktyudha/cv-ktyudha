@@ -1,5 +1,7 @@
 import { FunctionComponent } from "react";
 import HeroSection from "../sections/HeroSection";
+import ExperienceSection from "../sections/ExperienceSection";
+import PortofolioSection from "../sections/PortfolioSection";
 // import AboutSection from "../sections/AboutSection";
 // import CounterSection from "../sections/CounterSection";
 // import CategorySection from "../sections/CategorySection";
@@ -14,6 +16,8 @@ const LandingHome: FunctionComponent = () => {
   return (
     <>
       <HeroSection />
+      <ExperienceSection />
+      <PortofolioSection />
       {/* <CounterSection /> */}
       {/* <ServiceSection /> */}
       {/* <AboutSection /> */}
