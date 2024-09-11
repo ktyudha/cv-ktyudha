@@ -3,7 +3,7 @@ import { EXPERIENCES } from "@/constant/utils";
 
 const ExperienceSection: FunctionComponent = () => (
   <>
-    <section className="max-w-md mx-auto h-screen" id="portfolio">
+    <section className="max-w-md mx-auto min-h-screen mb-24" id="portfolio">
       <div className="mx-auto mb-20 text-center">
         <h1 className="text-5xl font-bold">Experiences</h1>
       </div>
