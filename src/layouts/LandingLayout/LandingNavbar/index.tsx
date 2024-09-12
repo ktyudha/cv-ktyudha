@@ -65,7 +65,7 @@ const LandingNavbar: FunctionComponent = () => {
     //     </div>
     //   </nav>
     // </header>
-    <div className="navbar dark:bg-base-100 fixed top-0 left-0 right-0 z-50  bg-slate-800 dark:bg-opacity-30 bg-opacity-30 dark:backdrop-blur">
+    <div className="navbar dark:bg-base-100 fixed top-0 left-0 right-0 z-50  bg-slate-800 dark:bg-opacity-60 bg-opacity-30 dark:backdrop-blur">
       <div className="container flex flex-row justify-between items-center mx-auto md:px-20 px-5">
         <div className="flex-1">
           <a className="text-xl font-bold">Kurniawan Try Yudha</a>
