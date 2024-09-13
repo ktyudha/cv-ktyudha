@@ -44,7 +44,6 @@ const ToggleThemeNavbar: FunctionComponent = () => {
     }
   }, []);
 
-  console.log(theme);
 
   return (
     <label className="swap swap-rotate">
