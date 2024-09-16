@@ -91,6 +91,10 @@ export const EXPERIENCES = [
     position: [{ job: "Fullstack - Web Developer", date: "Apr - May 2024" }],
   },
   {
+    company: "EEPIS Flying Robot for Indonesia",
+    position: [{ job: "Software Engineer", date: "Apr - Sep 2023" }],
+  },
+  {
     company: "Surabaya Dev",
     position: [{ job: "Software Engineer", date: "Feb - Dec 2023" }],
   },
