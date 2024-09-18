@@ -11,8 +11,8 @@ export default function GetBrowserRoutes() {
       element: <LandingLayout />,
       children: [
         { index: true, element: <Landing.LandingPage /> },
-        { path: "/faq", element: <Landing.FaqPage /> },
-        { path: "/contact", element: <Landing.ContactPage /> },
+        // { path: "/faq", element: <Landing.FaqPage /> },
+        // { path: "/contact", element: <Landing.ContactPage /> },
       ],
     },
   ];
