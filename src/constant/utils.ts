@@ -87,7 +87,7 @@ export const EXPERIENCES = [
     ],
   },
   {
-    company: "Sekawan Media",
+    company: "PT Sekawan Media Informatika",
     position: [{ job: "Fullstack - Web Developer", date: "Apr - May 2024" }],
   },
   {
