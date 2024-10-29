@@ -1,5 +1,12 @@
 export const PORTOFOLIOS = [
   {
+    title: "Bengkel Super Raya Teknik",
+    description: "Company Profile of Bengkel Super Raya Teknik",
+    type: "Website",
+    stack: "Laravel, Google Analytics",
+    image: "/assets/images/portfolio/superraya.jpg",
+  },
+  {
     title: "EEPIS Telecommunication",
     description: "Official Website for D3 Telecommunication PENS",
     type: "Website",
