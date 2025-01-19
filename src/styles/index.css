@@ -1,5 +1,7 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-primary: Apple Garamond, Georgia, serif, Palatino Linotype,
+    Book Antiqua, Palatino, Times New Roman, Times;
   line-height: 1.5;
   font-weight: 400;
 
@@ -65,4 +67,8 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.font-primary {
+  font-family: var(--font-primary);
 }

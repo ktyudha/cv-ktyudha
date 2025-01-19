@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import HeroSection from "../sections/HeroSection";
 import ExperienceSection from "../sections/ExperienceSection";
 import PortofolioSection from "../sections/PortfolioSection";
-// import AboutSection from "../sections/AboutSection";
+import AchievementSection from "../sections/AchievementSection";
 // import CounterSection from "../sections/CounterSection";
 // import CategorySection from "../sections/CategorySection";
 // import VideoSection from "../sections/VideoSection";
@@ -17,6 +17,7 @@ const LandingHome: FunctionComponent = () => {
     <>
       <HeroSection />
       <ExperienceSection />
+      <AchievementSection />
       <PortofolioSection />
       {/* <CounterSection /> */}
       {/* <ServiceSection /> */}

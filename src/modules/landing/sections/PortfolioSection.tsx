@@ -6,7 +6,7 @@ const PortfolioSection: FunctionComponent = () => (
     <section className="max-w-7xl mx-auto pb-52" id="portfolio">
       <div className="mx-auto mb-20 text-center">
         <h1 className="text-5xl font-bold">
-          <span className="text-2xl font-normal">My</span> Portfolio
+          <span className="text-3xl  font-serif ">My</span> Portfolio
         </h1>
       </div>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:mx-auto justify-center grid-cols-1 lg:gap-10 md:gap-5 gap-5 px-4">
