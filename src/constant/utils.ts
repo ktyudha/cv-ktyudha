@@ -125,3 +125,64 @@ export const EXPERIENCES = [
     ],
   },
 ];
+
+export const ACHIEVEMENTS = [
+  {
+    year: 2024,
+    title: "Intern MSIB Batch 7 at Aksamedia – Kemdikbud",
+    description: ` Joined PT Aksamedia Mulia Digital as a Fullstack Developer through
+              the MSIB Batch 7 program, competing with students from all over
+              Indonesia. Gained valuable experience working on both frontend and
+              backend development.`,
+  },
+  {
+    year: 2023,
+    title: "Funded by Creative Student Program – Innovative Work (Puspresnas)",
+    description: `Got funding for the Creative Student Program with the project
+              "Energy Efficiency Monitoring System for Electric Motorcycles." I
+              helped by designing the UI and managing the social media.`,
+  },
+  {
+    year: 2023,
+    title:
+      "Finalist in Indonesia Flying Robot Contest – Ground Control Station",
+    description: `Became a finalist in the Indonesia Flying Robot Contest,
+              specifically in the Technology Development Ground Control Station
+              category. I contributed by creating a smart website and a
+              real-time monitoring system for the project.`,
+  },
+  {
+    year: 2023,
+    title: "Finalist Networking Competition - IONIC",
+    description: `Competed as a finalist in the Networking Competition – IONIC,
+              hosted by Politeknik Elektronika Negeri Surabaya, at the
+              university student level, showcasing skills in networking and
+              technology.`,
+  },
+  {
+    year: 2023,
+    title: " 1st Place in Tampilan Website – Polytechnic Creative Festival",
+    description: `Won 1st place in the Website Design category at the Polytechnic
+              Creative Festival, organized by the Student Coordinating Board of
+              Polytechnic Institutions across Indonesia.`,
+  },
+  {
+    year: 2022,
+    title: "1st Place Networking Competition - Aitif 8.3",
+    description: `Won 1st place Networking Competition between Computer and Network
+              Engineering Vocational Schools. National level. Event by Institute
+              Teknologi & Bisnis Asia Malang`,
+  },
+  {
+    year: 2022,
+    title: "Participant at Olimpyc Skills IT Network System Admin",
+    description: `Ranking 6 of 51 participant Olimpyc Skills IT Network System
+              Administration. Wilayah Kerja 3 Jawa Timur level`,
+  },
+  {
+    year: 2020,
+    title: "Finalis at Olimpiade Jaringan Mikrotik - APJII",
+    description: `Best of 15 Networking Olympiad between Computer and Network
+              Engineering Vocational Schools. National level`,
+  },
+];
