@@ -87,10 +87,16 @@ export const PORTOFOLIOS = [
 
 export const EXPERIENCES = [
   {
+    company: "PT Dinamika Megatama Citra",
+    position: [
+      { job: "Programmer", date: "Aug 2025 - Present" },
+    ],
+  },
+  {
     company: "PT Aksamedia Mulia Digital",
     position: [
       { job: "Backend - Web Developer", date: "Feb 2024" },
-      { job: "Fullstack - Web Developer", date: "Aug 2024" },
+      { job: "Fullstack - Web Developer", date: "Aug 2024 - Present" },
     ],
   },
   {
