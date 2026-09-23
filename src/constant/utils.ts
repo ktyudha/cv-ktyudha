@@ -1,3 +1,28 @@
+export type FloatingIconKey = "linkedin" | "google-play";
+
+export const FLOATING_LINKS: {
+  key: FloatingIconKey;
+  name: string;
+  url: string;
+  bgClassName: string;
+  iconClassName: string;
+}[] = [
+  {
+    key: "linkedin",
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/ktyudha",
+    bgClassName: "bg-black",
+    iconClassName: "text-white",
+  },
+  {
+    key: "google-play",
+    name: "Google Play",
+    url: "https://developer.ktyudha.com",
+    bgClassName: "bg-white",
+    iconClassName: "text-black",
+  },
+];
+
 export const PORTOFOLIOS = [
   {
     title: "Bengkel Super Raya Teknik",
